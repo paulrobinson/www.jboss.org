@@ -45,7 +45,7 @@ profiles:
     dcp_base_url: http://dcpbeta-searchisko.rhcloud.com/
     dcp_base_protocol_relative_url: //dcpbeta-searchisko.rhcloud.com/
     log_faraday: true
-    push_to_searchisko: false
+    push_to_searchisko: true
     metrics: false
     authenticate_google_books_api: false
   

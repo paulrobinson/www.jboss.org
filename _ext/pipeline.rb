@@ -21,6 +21,7 @@ require 'disqus'
 require 'disqus_more'
 require 'lower_case_paths'
 require 'customer_portal'
+require 'connectors'
 require 'vault'
 require 'aweplug/helpers/define'
 
@@ -71,6 +72,7 @@ Awestruct::Extensions::Pipeline.new do
                                                        by: 'row',
                                                        row_labels: true, 
                                                        col_labels: true)
+  extension JBoss::Developer::Connectors.new
 
   extension Aweplug::Extensions::Kramdown::Quickstart.new(repository: '_eap-quickstarts', 
                                                           layout: 'get-started-item', 

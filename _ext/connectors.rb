@@ -11,14 +11,10 @@ module JBoss
 
       def execute site
         # Run this after the GoogleSpreadsheet extension for connectors
-        searchisko = Aweplug::Helpers::Searchisko.new({:base_url => site.dcp_base_url, 
-                                                       :authenticate => true, 
-                                                       :searchisko_username => ENV['dcp_user'], 
-                                                       :searchisko_password => ENV['dcp_password'], 
-                                                       :cache => site.cache,
-                                                       :logger => site.log_faraday,
-                                                       :searchisko_warnings => site.searchisko_warnings})
-        Parallel.each(site.fuse_connectors, in_threads: 40) do |connector|
+        searchisko = Aweplug::Helpers::Searchisko.default site, 0
+
+        Parallel.each(site.fuse_connectors, in_threads: 1) do |connector|
+
           searchisko_hash = connector.collect { |(key, value)|
             case key
             when 'name'
@@ -30,10 +26,10 @@ module JBoss
             else
               [key, value]
             end
-          }.merge({'sys_url_view' => "#{site.base_url}/products/fuse/connectors#!id=#{connector['id']}",}).to_h
-          
-          searchisko.push_content('jbossdeveloper_fuse_connectors', 
-                          connector[:id], 
+          }.to_h.merge({'sys_url_view' => "#{site.base_url}/products/fuse/connectors#!id=#{connector[0]}",})
+
+          searchisko.push_content('jbossdeveloper_connector',
+                          connector[0],
                           searchisko_hash.to_json)
         end
       end
