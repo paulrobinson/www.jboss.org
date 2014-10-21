@@ -8,13 +8,15 @@ h2.divider#overview Connectors
 
 = page._overview
 
+
 h2.divider
-  | All Projects
-  span.label#results-label
-  ul.small-block-grid-2.large-block-grid-4.medium-block-grid-3.results
+  | Uses projects stuff
+  span.label#connectors-results-label
+ul.large-block-grid-3.medium-block-grid-2.small-block-grid-1.results
 
 .row
   .large-23.columns
+    | Static way
     ul.large-block-grid-3.medium-block-grid-2.small-block-grid-1
       - site.fuse_connectors.each do |k,v|
         li.connector

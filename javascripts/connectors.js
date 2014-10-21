@@ -18,15 +18,17 @@ app.connectors = {
         //Currently the only way to specify no limit
         var maxResults = 500;
 
+
+
         var url = app.dcp.url.search;
 
         // Prep each filter
-        var query = ["(sys_content_type: 'jbossdeveloper_connector' AND (target_product_1:'fuse' OR target_product_2:'fuse' OR target_product_3:'fuse'))"];
+        var query = ["(sys_content_type: jbossdeveloper_connector AND (target_product_1: fuse OR target_product_2: fuse OR target_product_3: fuse))"];
 
         var request_data = {
             "field"  : ["_source"],
             "query" : query,
-            "size" : maxResults
+            "size" : 3
         };
 
         // append loading class to wrapper
@@ -42,7 +44,7 @@ app.connectors = {
             }
         }).done(function(data){
             var container = this.container || $('ul.results');
-            app.project.format(data, container);
+            app.connectors.format(data, container);
         });
     },
 
@@ -63,8 +65,8 @@ app.connectors = {
 
             var template = "<li class=\"connector\">"
                 + "<a class=\"fn-open-connector\" href=\"#\"><img class=\"connector-logo\" src=\"//static.jboss.org/www/pr/583/build/1066/other/lorempixel_com_300_150?v=1\"></a>"
-                + "<h3><a class=\"fn-open-connector\" href=\"#\">Connector Name</a></h3>"
-                + "<p>Short Description</p>"
+                + "<h3><a class=\"fn-open-connector\" href=\"#\">Name</a></h3>"
+                + "<p>Description</p>"
                 + "  <div class=\"connector-overlay-content\">"
                 + "      <div class=\"row\">"
                 + "      <div class=\"row\">"
@@ -114,7 +116,7 @@ app.connectors = {
             html = "Sorry, no results to display. Please modify your search.";
         }
         container.html(html).removeClass('loading');
-        container.prev().find("#results-label").html(hits.length);
+        container.prev().find("#connectors-results-label").html(hits.length);
     }
 };
 
