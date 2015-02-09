@@ -1,0 +1,23 @@
+current:
+  title: "Ceylon From Here to Infinity: The Big Picture and What's Coming"
+  abstract: "Ceylon is a new modern, elegant programming language for the JVM and JavaScript VM, designed for team work. But it's more than that, it is a full platform with modularity, an SDK, tools and IDEs. We will present Ceylon the language, the platform, and its ecosystem. You will see everything from starting a new project in the IDE to publishing it on Herd, our module repository, including using the SDK. We will also discuss the ongoing Ceylon projects such as the build system, Vert.x integration or Cayla, the new web framework. Finally we will discuss the plans for Ceylon 1.2 and further."
+  register-url: http://www.meetup.com/JBoss-User-Group-Worldwide/events/220111268/
+  time: Thursday, February 12, 6:00 PM UTC
+  speaker:
+    photo: http://ceylon-lang.org/images/team/StephaneEpardaud.jpg
+    bio: From deep into the Nice mountains, Stéphane works for Red Hat on the Ceylon project. He now works full time on various Ceylon projects for Red Hat, including the JVM compiler backend, various SDK modules, the Herd module repository and in general making sure all these parts work together.
+next:
+  - title: "Ceylon From Here to Infinity: The Big Picture and What's Coming"
+    abstract: "Ceylon is a new modern, elegant programming language for the JVM and JavaScript VM, designed for team work. But it's more than that, it is a full platform with modularity, an SDK, tools and IDEs. We will present Ceylon the language, the platform, and its ecosystem. You will see everything from starting a new project in the IDE to publishing it on Herd, our module repository, including using the SDK. We will also discuss the ongoing Ceylon projects such as the build system, Vert.x integration or Cayla, the new web framework. Finally we will discuss the plans for Ceylon 1.2 and further."
+    register-url: http://www.meetup.com/JBoss-User-Group-Worldwide/events/220111268/
+    time: Thursday, February 12, 6:00 PM UTC
+    speaker:
+      photo: http://ceylon-lang.org/images/team/StephaneEpardaud.jpg
+      bio: From deep into the Nice mountains, Stéphane works for Red Hat on the Ceylon project. He now works full time on various Ceylon projects for Red Hat, including the JVM compiler backend, various SDK modules, the Herd module repository and in general making sure all these parts work together.
+  - title: "Ceylon From Here to Infinity: The Big Picture and What's Coming"
+    abstract: "Ceylon is a new modern, elegant programming language for the JVM and JavaScript VM, designed for team work. But it's more than that, it is a full platform with modularity, an SDK, tools and IDEs. We will present Ceylon the language, the platform, and its ecosystem. You will see everything from starting a new project in the IDE to publishing it on Herd, our module repository, including using the SDK. We will also discuss the ongoing Ceylon projects such as the build system, Vert.x integration or Cayla, the new web framework. Finally we will discuss the plans for Ceylon 1.2 and further."
+    register-url: http://www.meetup.com/JBoss-User-Group-Worldwide/events/220111268/
+    time: Thursday, February 12, 6:00 PM UTC
+    speaker:
+      photo: http://ceylon-lang.org/images/team/StephaneEpardaud.jpg
+      bio: From deep into the Nice mountains, Stéphane works for Red Hat on the Ceylon project. He now works full time on various Ceylon projects for Red Hat, including the JVM compiler backend, various SDK modules, the Herd module repository and in general making sure all these parts work together.
